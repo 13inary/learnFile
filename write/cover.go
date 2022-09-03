@@ -8,8 +8,8 @@ import (
 // package write
 
 // WriteCover cover file
-func WriteCover(pathName string, data []byte, perm fs.FileMode) error {
-	err := ioutil.WriteFile(pathName, data, perm)
+func WriteCover(pathName string, datas []byte, perm fs.FileMode) error {
+	err := ioutil.WriteFile(pathName, datas, perm)
 	if err != nil {
 		return err
 	}

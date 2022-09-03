@@ -6,9 +6,9 @@ import "io/ioutil"
 
 // ReadCache
 func ReadPath(pathName string) ([]byte, error) {
-	data, err := ioutil.ReadFile(pathName)
+	datas, err := ioutil.ReadFile(pathName)
 	if err != nil {
 		return nil, err
 	}
-	return data, nil
+	return datas, nil
 }
